@@ -1,0 +1,105 @@
+.Parent-Container{
+    width: 100vw;
+    height: 80vh;
+    border: 1px solid black;
+    display: flex;
+    font-family: sans-serif;
+}
+/* --------------------------------------Scroll-Bar Starts-------------------------------------- */
+.sroll-bar{
+    border: 1px solid red;
+    width: 16.90vw;
+    height: 80vh;
+}
+
+.div1{
+    display: flex;
+    flex-direction: column;
+}
+
+.yt-lists{
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 8px;
+    display: inline-block;
+    width: 14vw;
+    margin-left: 5px;
+}
+
+.yt-lists:hover{
+    background-color: rgb(216, 216, 216);
+    cursor: pointer;
+}
+
+.list2{
+    display: flex;
+    align-items: center;
+}
+
+.list3{
+    display: flex;
+    align-items: center;
+}
+
+.yt-sub-btn{
+    width: 2vw;
+}
+/* --------------------------------------Scroll-Bar Ends-------------------------------------- */
+
+
+/* --------------------------------------Video-Container Starts-------------------------------------- */
+.videos-container{
+    border: 1px solid blue;
+    width: 83.10vw;
+}
+
+.div2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.yt-nav-lists{
+    background-color: #f2f2f2;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+.yt-nav-lists:hover{
+    background-color: rgb(216, 216, 216);
+    cursor: pointer;
+}
+
+.yt-nav-list1{
+    color: white;
+    background-color: black;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+.yt-nav-list1:hover{
+    background-color: black;
+    cursor: pointer;
+}
+/* --------------------------------------Video-Container Ends-------------------------------------- */
+
+
+/*--------------------------------- Media Qureries (Laptops and Tabs) ---------------------------------*/
+
+@media screen and (max-width:1080px){
+    .yt-nav-lists{
+        background-color: #f2f2f2;
+        font-weight: 500;
+        padding: 4px 8px;
+        border-radius: 8px;
+        font-size: 0.80rem;
+    }
+    
+    .yt-nav-list-group5{
+        display: none;
+    }
+}
