@@ -5,7 +5,7 @@
 }
 
 .navbar{
-    /* border: 1px solid blue; */
+    border: 1px solid blue;
     height: 56px;
     width: 100vw;
     display: flex;
@@ -17,15 +17,312 @@
     border: 1px solid red;
     height: 40px;
 }
-
+/*--------------------------------------------- Item1 Starts ---------------------------------------------*/
 .item1{
     width: 14.64vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* padding-left: 12px; */
 }
+
+.item1 span{
+    font-size: 1.5rem;
+    /* margin-right: 22px; */
+    padding: 2px 6px;
+}
+
+.hdr-ham:hover{
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 50%;
+    background-color: rgb(216, 216, 216);
+    cursor: pointer;
+}
+
+.item1 img{
+    width: 7.5vw;
+    cursor: pointer;
+}
+/*--------------------------------------------- Item1 Ends ---------------------------------------------*/
+
+/*--------------------------------------------- Item2 Starts ---------------------------------------------*/
 
 .item2{
     width: 51.24vw;
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }
+
+.item2 form{
+    display: flex;
+    align-items: center;
+}
+
+#search{
+    height: 40px;
+    width: 42vw;
+    border-radius: 30px 0px 0px 30px;
+    border: 1px solid rgb(179, 179, 179);
+    font-size: 1.2rem;
+    padding-left: 12px;
+}
+
+#search:active{
+    border: 1px solid rgb(179, 179, 179);
+}
+
+.item2-btn{
+    background-color: #f5f5f5;
+    width: 5vw;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 0px 30px 30px 0px;
+    cursor: pointer;
+    border: 1px solid #c6c9cf;
+}
+
+button:hover{
+    background-color: #e7e6e6;
+}
+
+.search-btn{
+    width: 2vw;
+}
+
+.search-mic{
+    width: 1.8vw;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-left: 10px;
+}
+
+.search-mic:hover{
+    background-color: #e7e6e6;
+}
+/*--------------------------------------------- Item2 Ends ---------------------------------------------*/
+
+/*--------------------------------------------- Item3 Starts ---------------------------------------------*/
 
 .item3{
     width: 18.30vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.item3-btn{
+    font-size: 1.2rem;
+    padding: 6px 10px;
+    border-radius: 30px;
+    border: 1px solid #f5f5f5 ;
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+#bell-icon{
+    width: 1.8vw;
+}
+
+#bell-icon:hover{
+    background-color: #e7e6e6;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#email-logo{
+    width: 4vw;
+    cursor: pointer;
+    margin-right: 16px;
+}
+/*--------------------------------------------- Item3 Ends ---------------------------------------------*/
+
+
+
+
+
+/*------------------------------------ Media Qureries (Laptops,Tablets) ------------------------------------*/
+
+@media screen and (max-width: 1024px){
+    .item1{
+        width: 14.64vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* padding-left: 12px; */
+    }
+    
+    .item1 span{
+        font-size: 1.1rem;
+    }
+
+    .item1 img{
+        width: 8.8vw;
+    }
+
+    #search{
+        height: 30px;
+        width: 42vw;
+        border-radius: 30px 0px 0px 30px;
+        border: 1px solid rgb(179, 179, 179);
+        font-size: 1.0rem;
+        padding-left: 12px;
+    }
+
+    .item2-btn{
+        background-color: #f5f5f5;
+        width: 5vw;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 0px 30px 30px 0px;
+        cursor: pointer;
+        border: 1px solid #c6c9cf;
+    }
+
+    .item3-btn{
+        font-size: 16px;
+        padding: 3px 5px;
+        border-radius: 30px;
+        border: 1px solid #f5f5f5 ;
+        background-color: #f5f5f5;
+        cursor: pointer;
+    }
+
+    .item3{
+        width: 18.30vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+
+    #email-logo{
+        width: 4vw;
+        cursor: pointer;
+        margin-right: 0px;
+    }
+}
+
+/*------------------------------------ Media Qureries (Phones) ------------------------------------*/
+
+@media screen and (max-width: 630px){
+    .item1{
+        width: 14.64vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        /* padding-left: 12px; */
+    }
+    
+    .item1 span{
+        font-size: 0.8rem;
+        /* margin-right: 22px; */
+        padding: 2px 6px;
+    }
+    
+    .hdr-ham:hover{
+        border: 1px solid rgb(216, 216, 216);
+        border-radius: 50%;
+        background-color: rgb(216, 216, 216);
+        cursor: pointer;
+    }
+    
+    .item1 img{
+        width: 7.5vw;
+        cursor: pointer;
+    }
+    /* -------------------------------------------------------------------------------------------- */
+    
+    .item2{
+        width: 51.24vw;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    
+    .item2 form{
+        display: flex;
+        align-items: center;
+    }
+    
+    #search{
+        height: 20px;
+        width: 38vw;
+        border-radius: 30px 0px 0px 30px;
+        border: 1px solid rgb(179, 179, 179);
+        font-size: 1.0rem;
+        padding-left: 8px;
+    }
+    
+    #search:active{
+        border: 1px solid rgb(179, 179, 179);
+    }
+    
+    .item2-btn{
+        background-color: #f5f5f5;
+        width: 5vw;
+        height: 20px;
+        border: 1px solid black;
+        border-radius: 0px 30px 30px 0px;
+        cursor: pointer;
+        border: 1px solid #c6c9cf;
+    }
+    
+    button:hover{
+        background-color: #e7e6e6;
+    }
+    
+    .search-btn{
+        width: 2vw;
+    }
+    
+    .search-mic{
+        width: 1.8vw;
+        background-color: #f5f5f5;
+        border-radius: 50%;
+        padding: 8px;
+        margin-left: 10px;
+    }
+    
+    .search-mic:hover{
+        background-color: #e7e6e6;
+    }
+    /* -------------------------------------------------------------------------------------------- */
+
+
+    .item3{
+        width: 18.30vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    
+    .item3-btn{
+        font-size: 0.6rem;
+        padding: 3px 5px;
+        border-radius: 30px;
+        border: 1px solid #f5f5f5 ;
+        background-color: #f5f5f5;
+        cursor: pointer;
+    }
+    
+    #bell-icon{
+        width: 1.4vw;
+    }
+    
+    #bell-icon:hover{
+        background-color: #e7e6e6;
+        border-radius: 50%;
+        padding: 5px;
+        cursor: pointer;
+    }
+    
+    #email-logo{
+        width: 3vw;
+        cursor: pointer;
+    }
 }
