@@ -1,0 +1,674 @@
+*{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.hdr{
+    /* border: 1px solid black; */
+    width: 100vw;
+    /* height: 15vh; */
+}
+
+.navbar{
+    /* border: 1px solid blue; */
+    height: 56px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.items{
+    /* border: 1px solid red; */
+    height: 40px;
+}
+/*--------------------------------------------- Item1 Starts ---------------------------------------------*/
+.item1{
+    width: 14.64vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* padding-left: 12px; */
+}
+
+.item1 span{
+    font-size: 1.5rem;
+    /* margin-right: 22px; */
+    padding: 2px 6px;
+}
+
+.hdr-ham:hover{
+    border: 1px solid rgb(216, 216, 216);
+    border-radius: 50%;
+    background-color: rgb(216, 216, 216);
+    cursor: pointer;
+}
+
+.item1 img{
+    width: 7.5vw;
+    cursor: pointer;
+}
+/*--------------------------------------------- Item1 Ends ---------------------------------------------*/
+
+/*--------------------------------------------- Item2 Starts ---------------------------------------------*/
+
+.item2{
+    width: 51.24vw;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.item2 form{
+    display: flex;
+    align-items: center;
+}
+
+#search{
+    height: 40px;
+    width: 42vw;
+    border-radius: 30px 0px 0px 30px;
+    border: 1px solid rgb(179, 179, 179);
+    font-size: 1.2rem;
+    padding-left: 12px;
+}
+
+#search:active{
+    border: 1px solid rgb(179, 179, 179);
+}
+
+.item2-btn{
+    background-color: #f5f5f5;
+    width: 5vw;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 0px 30px 30px 0px;
+    cursor: pointer;
+    border: 1px solid #c6c9cf;
+}
+
+button:hover{
+    background-color: #e7e6e6;
+}
+
+.search-btn{
+    width: 2vw;
+}
+
+.search-mic{
+    width: 1.8vw;
+    background-color: #f5f5f5;
+    border-radius: 50%;
+    padding: 8px;
+    margin-left: 10px;
+}
+
+.search-mic:hover{
+    background-color: #e7e6e6;
+}
+/*--------------------------------------------- Item2 Ends ---------------------------------------------*/
+
+/*--------------------------------------------- Item3 Starts ---------------------------------------------*/
+
+.item3{
+    width: 18.30vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.item3-btn{
+    font-size: 1.2rem;
+    padding: 6px 10px;
+    border-radius: 30px;
+    border: 1px solid #f5f5f5 ;
+    background-color: #f5f5f5;
+    cursor: pointer;
+}
+
+#bell-icon{
+    width: 1.8vw;
+}
+
+#bell-icon:hover{
+    background-color: #e7e6e6;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#email-logo{
+    width: 4vw;
+    cursor: pointer;
+    margin-right: 16px;
+}
+/*--------------------------------------------- Item3 Ends ---------------------------------------------*/
+
+
+
+
+
+/*------------------------------------ Media Qureries (Laptops,Tablets) ------------------------------------*/
+
+@media screen and (max-width: 1024px){
+    .item1{
+        width: 14.64vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* padding-left: 12px; */
+    }
+    
+    .item1 span{
+        font-size: 1.1rem;
+    }
+
+    .item1 img{
+        width: 8.8vw;
+    }
+
+    #search{
+        height: 30px;
+        width: 42vw;
+        border-radius: 30px 0px 0px 30px;
+        border: 1px solid rgb(179, 179, 179);
+        font-size: 1.0rem;
+        padding-left: 12px;
+    }
+
+    .item2-btn{
+        background-color: #f5f5f5;
+        width: 5vw;
+        height: 30px;
+        border: 1px solid black;
+        border-radius: 0px 30px 30px 0px;
+        cursor: pointer;
+        border: 1px solid #c6c9cf;
+    }
+
+    .item3-btn{
+        font-size: 16px;
+        padding: 3px 5px;
+        border-radius: 30px;
+        border: 1px solid #f5f5f5 ;
+        background-color: #f5f5f5;
+        cursor: pointer;
+    }
+
+    .item3{
+        width: 18.30vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+
+    #email-logo{
+        width: 4vw;
+        cursor: pointer;
+        margin-right: 0px;
+    }
+}
+
+/*------------------------------------ Media Qureries (Phones) ------------------------------------*/
+
+@media screen and (max-width: 630px){
+    .item1{
+        width: 14.64vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        /* padding-left: 12px; */
+    }
+    
+    .item1 span{
+        font-size: 0.8rem;
+        /* margin-right: 22px; */
+        padding: 2px 6px;
+    }
+    
+    .hdr-ham:hover{
+        border: 1px solid rgb(216, 216, 216);
+        border-radius: 50%;
+        background-color: rgb(216, 216, 216);
+        cursor: pointer;
+    }
+    
+    .item1 img{
+        width: 7.5vw;
+        cursor: pointer;
+    }
+    /* -------------------------------------------------------------------------------------------- */
+    
+    .item2{
+        width: 51.24vw;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+    
+    .item2 form{
+        display: flex;
+        align-items: center;
+    }
+    
+    #search{
+        height: 20px;
+        width: 38vw;
+        border-radius: 30px 0px 0px 30px;
+        border: 1px solid rgb(179, 179, 179);
+        font-size: 1.0rem;
+        padding-left: 8px;
+    }
+    
+    #search:active{
+        border: 1px solid rgb(179, 179, 179);
+    }
+    
+    .item2-btn{
+        background-color: #f5f5f5;
+        width: 5vw;
+        height: 20px;
+        border: 1px solid black;
+        border-radius: 0px 30px 30px 0px;
+        cursor: pointer;
+        border: 1px solid #c6c9cf;
+    }
+    
+    button:hover{
+        background-color: #e7e6e6;
+    }
+    
+    .search-btn{
+        width: 2vw;
+    }
+    
+    .search-mic{
+        width: 1.8vw;
+        background-color: #f5f5f5;
+        border-radius: 50%;
+        padding: 8px;
+        margin-left: 10px;
+    }
+    
+    .search-mic:hover{
+        background-color: #e7e6e6;
+    }
+    /* -------------------------------------------------------------------------------------------- */
+
+
+    .item3{
+        width: 18.30vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        overflow: hidden;
+    }
+    
+    .item3-btn{
+        font-size: 0.6rem;
+        padding: 3px 5px;
+        border-radius: 30px;
+        border: 1px solid #f5f5f5 ;
+        background-color: #f5f5f5;
+        cursor: pointer;
+    }
+    
+    #bell-icon{
+        width: 1.4vw;
+    }
+    
+    #bell-icon:hover{
+        background-color: #e7e6e6;
+        border-radius: 50%;
+        padding: 5px;
+        cursor: pointer;
+    }
+    
+    #email-logo{
+        width: 3vw;
+        cursor: pointer;
+    }
+}
+
+.Parent-Container{
+    width: 100vw;
+    height: 100vh;
+    /* border: 1px solid black; */
+    display: flex;
+    font-family: sans-serif;
+}
+/* --------------------------------------Scroll-Bar Starts-------------------------------------- */
+.sroll-bar{
+    /* border: 1px solid red; */
+    width: 16.90vw;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.mobile-view{
+    display: none;
+}
+
+.mobile-view ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 30vh;
+}
+
+.mobile-view ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.mobile-view img{
+    width: 4vw;
+}
+
+.div1{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background-color: green; */
+}
+
+.yt-lists{
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 8px;
+    display: inline-block;
+    width: 14vw;
+    margin-left: 5px;
+    display: flex;
+}
+
+.yt-lists:hover{
+    background-color: rgb(216, 216, 216);
+    cursor: pointer;
+}
+
+.yt-lists i{
+    margin-right: 38px;
+    width: 1.5vw;
+}
+
+.list2 img{
+    margin-right: 38px;
+    width: 1.5vw;
+}
+
+.list3 img{
+    margin-right: 35px;
+}
+
+.hr1{
+    margin-top: 12px;
+    border: 1px solid gray;
+}
+
+
+.list2{
+    display: flex;
+    align-items: center;
+}
+
+.list3{
+    display: flex;
+    align-items: center;
+}
+
+.yt-sub-btn{
+    width: 1.5vw;
+}
+
+
+
+
+
+.div1-2{
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 42vh;
+}
+
+.div1-2 li img{
+    width: 1.5vw;
+    margin-right: 40px;
+}
+
+
+
+
+.sub-list{
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 8px;
+    display: inline-block;
+    width: 14vw;
+    margin-left: 5px;
+    display: flex;
+    overflow: hidden;
+}
+
+.div1-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    overflow: hidden;
+    height: 58vh;
+}
+
+.div1-3 li{
+    /* margin-top: 15px; */
+    overflow: hidden;
+}
+
+.div1-3 li img{
+    width: 1.5vw;
+    height: 2vh;
+}
+/* --------------------------------------Scroll-Bar Ends-------------------------------------- */
+
+
+/* --------------------------------------Video-Container Starts-------------------------------------- */
+.videos-container{
+    /* border: 1px solid blue; */
+    width: 83.10vw;
+    /* height: 100vh; */
+    overflow-y: scroll;
+}
+
+.div2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.yt-nav-lists{
+    background-color: #f2f2f2;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+}
+
+.yt-nav-lists:hover{
+    background-color: rgb(216, 216, 216);
+    cursor: pointer;
+}
+
+.yt-nav-list1{
+    color: white;
+    background-color: black;
+    font-weight: 500;
+    padding: 6px 10px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+}
+
+.yt-nav-list1:hover{
+    background-color: black;
+    cursor: pointer;
+}
+
+.div2-2{
+    /* border: 1px solid black; */
+    width: 88.10vw;
+    /* height: 120vh; */
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 10px;
+}
+
+.div2-2 iframe{
+    border-radius: 20px;
+    width: 36.0vw;
+    height: 38.00vh;
+    /* margin-right: 50px; */
+}
+/* --------------------------------------Video-Container Ends-------------------------------------- */
+
+
+/*--------------------------------- Media Qureries (Laptops and Tabs) ---------------------------------*/
+
+@media screen and (max-width:1080px){
+    .yt-nav-lists{
+        background-color: #f2f2f2;
+        font-weight: 500;
+        padding: 4px 8px;
+        border-radius: 8px;
+        font-size: 0.80rem;
+    }
+    
+    .yt-nav-list-group5{
+        display: none;
+    }
+
+    .yt-lists{
+        font-weight: 500;
+        padding: 4px 8px;
+        border-radius: 8px;
+        display: inline-block;
+        width: 14vw;
+        margin-left: 4px;
+        display: flex;
+    }
+
+    .div1-2{
+        margin-top: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 30vh;
+    }
+
+    .div1-2 li img{
+        width: 1.5vw;
+        margin-right: 15px;
+    }
+
+    .yt-lists i{
+        margin-right: 28px;
+        width: 1.5vw;
+    }
+
+    .list2 img{
+        margin-right: 28px;
+        width: 1.5vw;
+    }
+    
+    .list3 img{
+        margin-right: 25px;
+        width: 4vw;
+    }
+
+    .yt-sub-btn{
+        width: 4vw;
+    }
+
+    .div2-2 iframe{
+        border-radius: 20px;
+        width: 36.0vw;
+        height: 28.00vh;
+        /* margin-right: 50px; */
+    }
+}
+
+/*--------------------------------- Media Qureries (Tabs) ---------------------------------*/
+
+@media screen and (max-width:855px){
+    .yt-nav-list-group4{
+        display: none;
+    }
+
+    .yt-nav-list-group3{
+        display: none;
+    }
+
+    .yt-lists{
+        font-weight: 500;
+        padding: 2px 4px;
+        border-radius: 8px;
+        display: inline-block;
+        width: 14vw;
+        margin-left: 3px;
+        display: flex;
+        font-size: 0.60rem;
+    }
+
+    .list3 img{
+        width: 2.5vw;
+        margin-right: 18px;
+    }
+
+    .yt-sub-btn{
+        width: 1.5wv;
+    }
+
+    .div1-2{
+        margin-top: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 20vh;
+    }
+
+    .div2-2 iframe{
+        border-radius: 20px;
+        width: 38.0vw;
+        height: 21.00vh;
+    }
+}
+
+
+/*--------------------------------- Media Qureries (Mobile) ---------------------------------*/
+
+@media screen and (max-width:500px){
+    .div2-2 iframe{
+        border-radius: 20px;
+        width: 38.0vw;
+        height: 14.00vh;
+    }
+
+    .mobile-view{
+        display: block;
+    }
+
+    .sroll-bar{
+        display: none;
+        width: 16.90vw;
+    }
+}
