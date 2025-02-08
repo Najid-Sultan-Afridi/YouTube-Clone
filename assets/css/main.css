@@ -1,35 +1,82 @@
 .Parent-Container{
     width: 100vw;
-    height: 80vh;
-    border: 1px solid black;
+    height: 100vh;
+    /* border: 1px solid black; */
     display: flex;
     font-family: sans-serif;
 }
 /* --------------------------------------Scroll-Bar Starts-------------------------------------- */
 .sroll-bar{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 16.90vw;
-    height: 80vh;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.mobile-view{
+    display: none;
+}
+
+.mobile-view ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 30vh;
+}
+
+.mobile-view ul li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+}
+
+.mobile-view img{
+    width: 4vw;
 }
 
 .div1{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
+    /* background-color: green; */
 }
 
 .yt-lists{
-    font-weight: 600;
+    font-weight: 500;
     padding: 8px 12px;
     border-radius: 8px;
     display: inline-block;
     width: 14vw;
     margin-left: 5px;
+    display: flex;
 }
 
 .yt-lists:hover{
     background-color: rgb(216, 216, 216);
     cursor: pointer;
 }
+
+.yt-lists i{
+    margin-right: 38px;
+    width: 1.5vw;
+}
+
+.list2 img{
+    margin-right: 38px;
+    width: 1.5vw;
+}
+
+.list3 img{
+    margin-right: 35px;
+}
+
+.hr1{
+    margin-top: 12px;
+    border: 1px solid gray;
+}
+
 
 .list2{
     display: flex;
@@ -42,15 +89,67 @@
 }
 
 .yt-sub-btn{
-    width: 2vw;
+    width: 1.5vw;
+}
+
+
+
+
+
+.div1-2{
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 42vh;
+}
+
+.div1-2 li img{
+    width: 1.5vw;
+    margin-right: 40px;
+}
+
+
+
+
+.sub-list{
+    font-weight: 500;
+    padding: 8px 12px;
+    border-radius: 8px;
+    display: inline-block;
+    width: 14vw;
+    margin-left: 5px;
+    display: flex;
+    overflow: hidden;
+}
+
+.div1-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    overflow: hidden;
+    height: 58vh;
+}
+
+.div1-3 li{
+    /* margin-top: 15px; */
+    overflow: hidden;
+}
+
+.div1-3 li img{
+    width: 1.5vw;
+    height: 2vh;
 }
 /* --------------------------------------Scroll-Bar Ends-------------------------------------- */
 
 
 /* --------------------------------------Video-Container Starts-------------------------------------- */
 .videos-container{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     width: 83.10vw;
+    /* height: 100vh; */
+    overflow-y: scroll;
 }
 
 .div2{
@@ -85,6 +184,25 @@
     background-color: black;
     cursor: pointer;
 }
+
+.div2-2{
+    /* border: 1px solid black; */
+    width: 88.10vw;
+    /* height: 120vh; */
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    column-gap: 10px;
+}
+
+.div2-2 iframe{
+    border-radius: 20px;
+    width: 36.0vw;
+    height: 38.00vh;
+    /* margin-right: 50px; */
+}
 /* --------------------------------------Video-Container Ends-------------------------------------- */
 
 
@@ -101,5 +219,120 @@
     
     .yt-nav-list-group5{
         display: none;
+    }
+
+    .yt-lists{
+        font-weight: 500;
+        padding: 4px 8px;
+        border-radius: 8px;
+        display: inline-block;
+        width: 14vw;
+        margin-left: 4px;
+        display: flex;
+    }
+
+    .div1-2{
+        margin-top: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 30vh;
+    }
+
+    .div1-2 li img{
+        width: 1.5vw;
+        margin-right: 15px;
+    }
+
+    .yt-lists i{
+        margin-right: 28px;
+        width: 1.5vw;
+    }
+
+    .list2 img{
+        margin-right: 28px;
+        width: 1.5vw;
+    }
+    
+    .list3 img{
+        margin-right: 25px;
+        width: 4vw;
+    }
+
+    .yt-sub-btn{
+        width: 4vw;
+    }
+
+    .div2-2 iframe{
+        border-radius: 20px;
+        width: 36.0vw;
+        height: 28.00vh;
+        /* margin-right: 50px; */
+    }
+}
+
+/*--------------------------------- Media Qureries (Tabs) ---------------------------------*/
+
+@media screen and (max-width:855px){
+    .yt-nav-list-group4{
+        display: none;
+    }
+
+    .yt-nav-list-group3{
+        display: none;
+    }
+
+    .yt-lists{
+        font-weight: 500;
+        padding: 2px 4px;
+        border-radius: 8px;
+        display: inline-block;
+        width: 14vw;
+        margin-left: 3px;
+        display: flex;
+        font-size: 0.60rem;
+    }
+
+    .list3 img{
+        width: 2.5vw;
+        margin-right: 18px;
+    }
+
+    .yt-sub-btn{
+        width: 1.5wv;
+    }
+
+    .div1-2{
+        margin-top: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 20vh;
+    }
+
+    .div2-2 iframe{
+        border-radius: 20px;
+        width: 38.0vw;
+        height: 21.00vh;
+    }
+}
+
+
+/*--------------------------------- Media Qureries (Mobile) ---------------------------------*/
+
+@media screen and (max-width:500px){
+    .div2-2 iframe{
+        border-radius: 20px;
+        width: 38.0vw;
+        height: 14.00vh;
+    }
+
+    .mobile-view{
+        display: block;
+    }
+
+    .sroll-bar{
+        display: none;
+        width: 16.90vw;
     }
 }
